@@ -154,7 +154,7 @@ class USBPrinterAdapter {
                         Log.e(LOG_TAG, "failed to open USB Connection")
                         return false
                     }
-                    Toast.makeText(mContext, "Device connected", Toast.LENGTH_SHORT).show()
+                    // Toast.makeText(mContext, "Device connected", Toast.LENGTH_SHORT).show()
                     return if (usbDeviceConnection.claimInterface(usbInterface, true)) {
                         mEndPoint = ep
                         mUsbInterface = usbInterface
